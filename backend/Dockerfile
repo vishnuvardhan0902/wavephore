@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
+ENV PORT=3001
+
 # Install dependencies
 RUN npm install
 
@@ -14,7 +16,7 @@ RUN npm install
 COPY . .
 
 # Expose the port
-EXPOSE 5000
+EXPOSE 3001
 
 # Start the server
 CMD ["node", "server.js"]
