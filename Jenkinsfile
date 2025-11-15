@@ -2,7 +2,6 @@ pipeline {
     tools {
         nodejs "node18"  
     }
-
     stages {
         stage('Install') {
             steps {

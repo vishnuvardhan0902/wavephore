@@ -3,6 +3,6 @@ const app = exp();
 require('dotenv').config()
 const port = process.env.PORT || 5000;
 app.get('/api', (req, res)=>{
-    console.log('hello ssr this is babu')
+    console.log('hello ssr this is mandakini')
 })
 app.listen(port, ()=>{console.log('server is running on', port)})
